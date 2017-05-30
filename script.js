@@ -1,11 +1,11 @@
-$submitBtn = $('.new-item-form--submit');
-$itemInput = $('.new-item-form--name');
-$itemList = $('.item-list');
+var $submitBtn = $('.new-item-form--submit');
+var $itemInput = $('.new-item-form--name');
+var $itemList = $('.item-list');
 
 
 $submitBtn.on('click', function(e){
   e.preventDefault();
-  inputText = $itemInput.val();
+  var inputText = $itemInput.val();
   $itemList.append(
     `<article class="item-list-item">
       <p>${inputText}</p>
